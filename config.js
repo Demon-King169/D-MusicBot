@@ -1,16 +1,16 @@
 module.exports = {
 	helpCmdPerPage: 10, //- Number of commands per page of help command
 	lyricsMaxResults: 5, //- Number of results for lyrics command (Do not touch this value if you don't know what you are doing)
-	adminId: "UserId", //- Replace UserId with the Discord ID of the admin of the bot
+	adminId: "1207510451005427783", //- Replace UserId with the Discord ID of the admin of the bot
 	token: process.env.token || "", //- Bot's Token
-	clientId: process.env.clientId || "", //- ID of the bot
-	clientSecret: process.env.clientSecret || "", //- Client Secret of the bot
-	port: 4200, //- Port of the API and Dashboard
+	clientId: process.env.id || "", //- ID of the bot
+	clientSecret: process.env.id2 || "", //- Client Secret of the bot
+	port: 5000, //- Port of the API and Dashboard
 	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
 	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
 	serverDeafen: true, //- If you want bot to stay deafened
 	defaultVolume: 100, //- Sets the default volume of the bot, You can change this number anywhere from 1 to 100
-	supportServer: "https://discord.gg/sbySMS7m3v", //- Support Server Link
+	supportServer: "", //- Support Server Link
 	Issues: "https://github.com/SudhanPlayz/Discord-MusicBot/issues", //- Bug Report Link
 	permissions: 277083450689, //- Bot Inviting Permissions
 	disconnectTime: 30000, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
@@ -20,18 +20,18 @@ module.exports = {
 	autoLeave: false, //- When set to true, the bot will automatically leave when no one is in the voice channel (can be combined with 24/7 to always be in voice channel until everyone leaves; if 24/7 is on disconnectTime will add a disconnect delay after everyone leaves.)
 	debug: false, //- Debug mode
 	cookieSecret: "CodingWithSudhan is epic", //- Cookie Secret
-	website: "http://localhost:4200", //- without the / at the end
+	website: "http://D-MusicBot.tech", //- without the / at the end
 	// You need a lavalink server for this bot to work!!!!
 	// Lavalink server; public lavalink -> https://lavalink-list.darrennathanael.com/; create one yourself -> https://darrennathanael.com/post/how-to-lavalink
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "", //- The host name or IP of the lavalink server.
-			port: 80, // The port that lavalink is listening to. This must be a number!
-			password: "", //- The password of the lavalink server.
+			host: "lavalink4.alfari.id", //- The host name or IP of the lavalink server.
+			port: 443, // The port that lavalink is listening to. This must be a number!
+			password: "catfein", //- The password of the lavalink server.
 			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.
-			secure: false, //- Can be either true or false. Only use true if ssl is enabled!
+			secure: true, //- Can be either true or false. Only use true if ssl is enabled!
 		},
 	],
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
@@ -40,10 +40,10 @@ module.exports = {
 		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
 		activities: [
 			{
-				name: "Music", //- Status Text
-				type: "LISTENING", //- PLAYING, WATCHING, LISTENING, STREAMING
+				name: "Music With DemonKing", //- Status Text
+				type: "PLAYING", //- PLAYING, WATCHING, LISTENING, STREAMING
 			},
 		],
 	},
-	iconURL: "https://cdn.darrennathanael.com/icons/spinning_disk.gif", //- This icon will be in every embed's author field
+	iconURL: "https://cdn.discordapp.com/attachments/1213033697771782146/1216267052420173884/Cartoon_Character_Pictures.jpg?ex=65ffc3f6&is=65ed4ef6&hm=92e6874be8bd82fa172554e166a713c7c5bee38e5d16febcfbf027bebff20ec4&", //- This icon will be in every embed's author field
 };
